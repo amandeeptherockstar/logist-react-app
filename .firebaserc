@@ -1,0 +1,26 @@
+{
+  "projects": {
+       "default": "live-zeus-app"
+  },
+  "targets": {
+    "live-zeus-app": {
+      "hosting": {
+        "test": [
+          "test-zcp-app"
+        ],
+        "live": [
+          "live-zeus-app"
+        ],
+        "feature1": [
+          "feature1-zcp"
+        ],
+        "feature2": [
+          "feature2-zcp"
+        ],
+        "feature3": [
+          "feature3-zcp"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import '~antd/es/style/themes/default.less';
+
+.body {
+  // background: linear-gradient(180deg, #e5f0fa 0, #fff);
+}
+
+.logo {
+  img {
+    display: block;
+    height: 62px;
+    margin: 0 auto;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  min-height: 100vh;
+  overflow: auto;
+  background: #f5f7fa;
+}
+
+.signIn {
+  height: 100%;
+}
+
+.content {
+  margin: 20px 10px;
+  padding: 32px 24px;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    min-width: 416px;
+    background-size: 100%;
+  }
+
+  .content {
+    min-width: 416px;
+    margin: 100px 0 10px 0;
+    padding: 32px 24px;
+  }
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 2 4px;
+  // line-height: 44px;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.desc {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: @text-color-secondary;
+  font-size: @font-size-base;
+}
+
+.copyRight {
+  align-self: center;
+  margin: 5px;
+  background-color: aqua;
+}

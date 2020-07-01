@@ -1,0 +1,44 @@
+@import './colors.less';
+@import './spacing.less';
+@import './border.less';
+
+.app-btn-flat {
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+
+  &:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.app-btn-primary {
+  height: auto;
+  padding: @padding-size-3 @padding-size-6;
+  color: #fff;
+  background-color: @app-color-primary;
+  border: none;
+  box-shadow: none;
+  .rounded();
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: @app-color-primary-hover;
+    box-shadow: none;
+  }
+}
+.app-btn-sm {
+  padding: @padding-size-2 @padding-size-4;
+}
+
+.app-btn-link-primary {
+  color: @app-color-primary;
+
+  &:hover {
+    color: darken((@app-color-primary), 10%);
+  }
+}

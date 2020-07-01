@@ -1,0 +1,234 @@
+@import '~antd/es/style/themes/default.less';
+@import '~@/styles/theme/colors.less';
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow: auto;
+  background-color: @menu-bg;
+
+  .leftMenu {
+    width: auto;
+    border-right: @border-width-base @border-style-base @border-color-split;
+
+    :global {
+      .ant-menu-inline {
+        border: none;
+      }
+
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item {
+        height: auto;
+        margin-right: 10px;
+      }
+
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        height: auto;
+
+        .menu-title {
+          color: @zcp-primary-color;
+          font-weight: 600;
+        }
+
+        .menu-sub-title {
+          color: @zcp-color-gray-600;
+        }
+      }
+
+      .menu-title {
+        font-weight: 600;
+        color: @zcp-color-gray-700;
+      }
+
+      .menu-sub-title {
+        color: @zcp-color-gray-600;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding-top: 8px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+
+    .title {
+      margin-bottom: 12px;
+      color: @heading-color;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  :global {
+    .ant-list-split .ant-list-item:last-child {
+      border-bottom: 1px solid @border-color-split;
+    }
+
+    .ant-list-item {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+}
+
+:global {
+  .ant-list-item-meta {
+    .taobao {
+      display: block;
+      color: #ff4000;
+      font-size: 48px;
+      line-height: 48px;
+      border-radius: @border-radius-base;
+    }
+
+    .dingding {
+      margin: 2px;
+      padding: 6px;
+      color: #fff;
+      font-size: 32px;
+      line-height: 32px;
+      background-color: #2eabff;
+      border-radius: @border-radius-base;
+    }
+
+    .alipay {
+      color: #2eabff;
+      font-size: 48px;
+      line-height: 48px;
+      border-radius: @border-radius-base;
+    }
+  }
+
+  font.strong {
+    color: @success-color;
+  }
+
+  font.medium {
+    color: @warning-color;
+  }
+
+  font.weak {
+    color: @error-color;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .main {
+    flex-direction: column;
+
+    .leftMenu {
+      width: 100%;
+      border: none;
+    }
+
+    .right {
+      padding: 40px;
+    }
+  }
+}
+
+.billingPlan {
+  max-width: 350px;
+
+  .header {
+    padding: @padding-lg;
+    border-top: 6px solid @success-color;
+
+    .yourPlan {
+      color: @text-color-secondary;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .title {
+      color: #554d56;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .subTitle {
+      color: @text-color-secondary;
+    }
+  }
+
+  .pricing {
+    padding: @padding-lg;
+    background-color: @background-color-light;
+
+    .wrapper {
+      display: table;
+
+      .price {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: 26px;
+          left: -8px;
+          margin-right: 4px;
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 16px;
+          content: '$';
+        }
+      }
+
+      .amount {
+        display: table-cell;
+        font-weight: 300;
+        font-size: 4rem;
+        vertical-align: top;
+      }
+
+      .priceRate {
+        position: absolute;
+        bottom: 15px;
+        left: 100%;
+        margin-left: 2px;
+        padding-bottom: 6px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: left;
+      }
+    }
+
+    .description {
+      display: table-cell;
+      padding-left: 2.2rem;
+      color: @text-color-secondary;
+      vertical-align: middle;
+    }
+
+    .trailDescription {
+      display: table-cell;
+      color: @text-color-secondary;
+      vertical-align: middle;
+    }
+  }
+
+  .footer {
+    padding: @padding-lg;
+
+    .features {
+      font-size: 1rem;
+
+      ul {
+        padding: 0;
+
+        li {
+          padding: 8px 0;
+        }
+      }
+    }
+
+    .subTitle {
+      color: @text-color-secondary;
+    }
+  }
+}

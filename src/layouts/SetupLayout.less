@@ -1,0 +1,83 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 43px;
+  background-color: #fff;
+}
+
+.greet {
+  color: #000;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subGreet {
+  margin-top: -10px;
+  color: #000;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background: @layout-body-background;
+  background-color: #fff;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    min-width: 1095px;
+    // background-image: url(https://cdn.fidelissd.com/img/backgrounds/login-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .content {
+    width: 60%;
+    margin: 100px 0 0;
+    padding: 32px 24px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.top {
+  text-align: center;
+}
+
+.logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.desc {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: @text-color-secondary;
+  font-size: @font-size-base;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}

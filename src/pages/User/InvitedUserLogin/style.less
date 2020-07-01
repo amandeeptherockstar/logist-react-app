@@ -1,0 +1,49 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+    }
+  }
+
+  .text {
+    // margin-bottom: 20px;
+    width: 400px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+.success,
+.warning,
+.error {
+  transition: color 0.3s;
+}
+
+.success {
+  color: @success-color;
+}
+
+.warning {
+  color: @warning-color;
+}
+
+.error {
+  color: @error-color;
+}
+
+.progress-pass > .progress {
+  :global {
+    .ant-progress-bg {
+      background-color: @warning-color;
+    }
+  }
+}

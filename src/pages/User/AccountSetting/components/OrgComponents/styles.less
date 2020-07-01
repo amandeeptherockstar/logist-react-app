@@ -1,0 +1,448 @@
+.fsdAttachments.tileList {
+  line-height: 1.5;
+}
+.fsdAttachments.tileList li {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  vertical-align: top;
+  background-color: transparent;
+}
+.fsdAttachments.tileList li {
+  position: relative;
+  display: block;
+  width: auto;
+  border-radius: 2px;
+}
+.fsdAttachments.tileList li a:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.26);
+}
+
+.fsdAttachments.tileList li div.public-doc::after {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Material Icons';
+  line-height: 20px;
+  text-align: center;
+  background-color: #4caf50;
+  border-radius: 999px;
+  content: 'done';
+}
+
+.fsdAttachments.tileList li a span.mark-selection {
+  display: none;
+}
+.fsdAttachments.tileList li a.active {
+  border: 2px solid #4caf50;
+}
+.fsdAttachments.tileList li a.active span.mark-selection {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: none;
+  padding: 2px;
+  color: #fff;
+  line-height: 10px;
+  text-align: center;
+  background-color: #4caf50;
+  border-radius: 999px;
+}
+
+.fsdAttachments.tileList li a.selected {
+  border: 1px solid #007be8;
+}
+.fsdAttachments.tileList li a.selected span.mark-selection {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: none;
+  padding: 2px;
+  color: #fff;
+  line-height: 10px;
+  text-align: center;
+  background-color: #007be8;
+  border-radius: 999px;
+}
+
+.fsdAttachments.tileList li a.tile.private {
+  border: 1px dotted orangered;
+}
+.fsdAttachments.tileList li a.tile.private > span.mark-selection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding: 1px;
+  color: #fff;
+  line-height: 5px;
+  text-align: center;
+  background-color: indianred;
+}
+
+.fsdAttachments.tileList li a.tile i.material-icons {
+  color: #fcaf26;
+  font-size: 300%;
+}
+
+.fsdAttachments.tileList li a.tile.active i.material-icons {
+  color: #4caf50;
+}
+.fsdAttachments.tileList li a.tile.private i.material-icons {
+  color: indianred;
+}
+
+.fsdAttachments.tileList li a.tile.active > span.mark-selection > i {
+  color: #fff;
+  font-size: 14px;
+}
+.fsdAttachments.tileList li a.tile.private > span.mark-selection > i {
+  color: #fff;
+  font-size: 14px;
+}
+
+.fsdAttachments.tileList li a > div.doc-img-wrap {
+  display: inline-block;
+  padding: 5px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #fff;
+}
+.fsdAttachments.tileList li a > div.tile-text {
+  display: inline-block;
+  max-width: 180px;
+  padding: 5px;
+  font-size: 11px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.fsdAttachments.tileList li a.edit-party-content {
+  position: absolute;
+  top: -12px;
+  right: 14px;
+  z-index: 9;
+  display: none;
+}
+.fsdAttachments.tileList li a.edit-party-content:hover {
+  box-shadow: none;
+}
+.fsdAttachments.tileList li:hover a.edit-party-content {
+  display: block;
+}
+.fsdAttachments.tileList li a.edit-party-content i {
+  color: dodgerblue;
+  font-size: 24px;
+}
+
+.fsdAttachments.tileList li a.remove-party-content {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 9;
+  display: none;
+}
+.fsdAttachments.tileList li a.remove-party-content:hover {
+  box-shadow: none;
+}
+.fsdAttachments.tileList li:hover a.remove-party-content {
+  display: block;
+}
+.fsdAttachments.tileList li a.remove-party-content i {
+  color: #ef9a9a;
+  font-size: 24px;
+}
+
+.fsdAttachments.tileList li a.download-party-content {
+  position: absolute;
+  top: -12px;
+  right: 40px;
+  z-index: 9;
+  display: none;
+}
+.fsdAttachments.tileList li a.download-party-content:hover {
+  box-shadow: none;
+}
+.fsdAttachments.tileList li:hover a.download-party-content {
+  display: block;
+}
+.fsdAttachments.tileList li a.download-party-content i {
+  color: dodgerblue;
+  font-size: 24px;
+}
+
+.docPreviewWrapper {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  overflow: hidden;
+  overflow: visible;
+  text-decoration: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.aYA {
+  float: left;
+  width: 35px;
+  height: 34px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+.image {
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.aYz {
+  overflow: hidden;
+}
+.aSH {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.aSH:hover {
+  .aYy {
+    top: 0;
+    border-top: none;
+    transition: all 150ms ease 0s;
+  }
+
+  .aQA {
+    max-height: 3.6em;
+    margin-right: 7px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+
+.aQA {
+  margin-top: 9px;
+  margin-right: 30px;
+  overflow: hidden;
+  font-weight: bold;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+.aV3 {
+  color: #007be8;
+  font-weight: 400;
+  font-size: 10px !important;
+  -moz-user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+.aQA {
+  width: 100%;
+  color: #777;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.aYp {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+.aYy {
+  position: absolute;
+  top: 78px;
+  right: 0;
+  left: 0;
+  height: 130px;
+  padding-right: 5px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  transition: all 150ms ease 0s !important;
+}
+
+.inlineList {
+  margin: 0 auto 1.0625rem auto;
+  margin-right: 0;
+  margin-left: -1.375rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+row.tileList {
+  line-height: 1.5;
+}
+row.tileList li {
+  position: relative;
+  width: 230px;
+  margin: 5px;
+  vertical-align: top;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+}
+row.tileList li a.tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+}
+row.tileList li a:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+row.tileList li a > span.mark-selection {
+  display: none;
+}
+row.tileList li a.tile.active {
+  border: 1px solid #4caf50;
+}
+.active {
+  border: 2px solid #4caf50;
+}
+.attached {
+  color: #fff;
+  background-color: #4caf50;
+}
+row.tileList li a.tile.active > span.mark-selection {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  display: block;
+  padding: 2px;
+  color: #fff;
+  line-height: 10px;
+  text-align: center;
+  background-color: #4caf50;
+  border-radius: 999px;
+}
+row.tileList li a.tile.active i.material-icons {
+  color: #4caf50;
+}
+row.tileList li a.tile.active > span.mark-selection > i {
+  color: #fff;
+  font-size: 16px;
+}
+
+row.tileList li a > div.img-wrap {
+  display: inline-block;
+  padding: 5px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #fff;
+}
+row.tileList li a > div.tile-text {
+  display: inline-block;
+  max-width: 160px;
+  padding: 5px;
+  font-size: 11px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-all;
+}
+row.tileList li a.remove-quote-attachment {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 9;
+  display: none;
+}
+row.tileList li a.remove-quote-attachment:hover {
+  box-shadow: none;
+}
+row.tileList li:hover a.remove-quote-attachment {
+  display: block;
+}
+row.tileList li a.remove-quote-attachment i {
+  color: #ef9a9a;
+  font-size: 24px;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.listItemImage {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f8f8f8;
+  cursor: pointer;
+}
+
+.font_mi {
+  color: #333;
+  font-weight: 600;
+  font-size: 8px !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.p_l_10 {
+  padding-left: 10px;
+}
+
+.m_l_10 {
+  margin-left: 10px;
+}
+
+.m_t_5 {
+  margin-top: 5px;
+}
+
+.font_shade_light {
+  opacity: 0.6;
+}
+
+.font_shade_lighter {
+  opacity: 0.4;
+}
+
+.btn_attachment_action {
+  padding: 2px 7px 1px;
+  font-size: 16px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fsdAttachments.tileList li a:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.26);
+}
+
+.p_l_24 {
+  padding-left: 24px;
+}
+
+.inlineList {
+  margin: 0 auto 1.0625rem auto;
+  margin-right: 0;
+  margin-left: -1.375rem;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.inlineList > li {
+  display: block;
+  float: left;
+  margin-left: 1.375rem;
+  list-style: none;
+}
+
+.inlineList > li > * {
+  display: block;
+}

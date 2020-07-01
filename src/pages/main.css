@@ -1,0 +1,414 @@
+.Calculator__top-content {
+  display: -webkit-box;
+  display: flex;
+}
+.Calculator__form {
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+@media (min-width: 1200px) {
+  .CalculatorV2Container .Calculator__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
+.Calculator__control-panel,
+.Calculator__form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .Calculator__control-panel,
+  .Calculator__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+}
+
+.Calculator__column {
+  position: relative;
+  max-width: 520px;
+}
+
+.Calculator__column + .Calculator__column {
+  margin-top: 20px;
+}
+
+.CalculatorV2Container .Calculator__column,
+.embed .Calculator__column {
+  max-width: none;
+}
+
+.Calculator--hasOneColumn .Calculator__column {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .Calculator__column {
+    width: calc(50% - 10px);
+  }
+
+  .Calculator--hasOneColumn .Calculator__column,
+  .CalculatorV2Container .Calculator__column {
+    width: 100%;
+  }
+}
+
+.embed .Calculator__column {
+  margin-top: 0;
+}
+
+.SsrLoader {
+  position: relative;
+}
+
+.SsrLoader__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.SsrLoader__backdrop {
+  border-radius: 4px;
+}
+
+.SsrLoader + .SsrLoader {
+  margin-top: 25px;
+}
+
+.CalculatorRowGroup {
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 6px 8px 42px 1px rgba(0, 0, 0, 0.15);
+}
+
+.embed .CalculatorRowGroup {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.CalculatorRowGroup__name {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 13px 0;
+  padding-left: 16px;
+  color: #333;
+  background: #e6e6e6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.embed .CalculatorRowGroup__name {
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  font-weight: 500;
+  text-align: center;
+  background: #fff;
+}
+
+.CalculatorRowGroup + .CalculatorRowGroup {
+  margin-top: 25px;
+}
+
+.embed .CalculatorRowGroup + .CalculatorRowGroup {
+  margin-top: 0;
+}
+
+.CalculatorRow--hasErrorMessages.CalculatorRow--focused,
+.CalculatorRow--readOnly.CalculatorRow--focused {
+  height: 110px;
+}
+
+.CalculatorRow--hasErrorMessages.CalculatorRow--focused .CalculatorRow__show-menu,
+.CalculatorRow--readOnly.CalculatorRow--focused .CalculatorRow__show-menu {
+  height: 109px;
+}
+
+.CalculatorRow--hasErrorMessages.CalculatorRow--focused .CalculatorRow__info-box,
+.CalculatorRow--readOnly.CalculatorRow--focused .CalculatorRow__info-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 30px);
+  height: 60px;
+  padding-left: 16px;
+  font-size: 14px;
+  color: #989c9d;
+}
+
+.CalculatorRow__input-box {
+  display: -webkit-box;
+  display: flex;
+  height: 50px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-right: 8px;
+  margin-left: 16px;
+}
+
+.CalculatorRow__input-box:not(.CalculatorRow__input-box--hasMultiUnits) {
+  overflow: hidden;
+}
+
+.CalculatorRow__input-box.CalculatorRow__input-box--hasMultiUnits {
+  margin-right: 0;
+}
+
+.CalculatorRow__input-box,
+.CalculatorRow__unit {
+  height: 50px;
+}
+.CalculatorRow__name {
+  margin-right: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.embed .CalculatorRow__name {
+  margin-right: 0;
+}
+
+.CalculatorRow__name--hasHelp {
+  border-bottom: 1px dotted #989c9d;
+}
+.CalculatorRow:not(.CalculatorRow--readOnly) .CalculatorRow__input--actionsShowed,
+.CalculatorRow:not(.CalculatorRow--readOnly) .CalculatorRow__name--actionsShowed,
+.CalculatorRow:not(.CalculatorRow--readOnly) .CalculatorRow__unit--actionsShowed {
+  z-index: 1;
+  -webkit-transform: translateX(-125px);
+  transform: translateX(-125px);
+}
+.CalculatorRow__unit {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-right: 8px;
+  color: #555;
+}
+
+.CalculatorRow__unit-select,
+.CalculatorRow__value-select {
+  height: 100%;
+}
+
+.CalculatorRow__unit-select .Select-control,
+.CalculatorRow__value-select .Select-control {
+  display: block;
+  height: 50px;
+  overflow: visible;
+  background: 0 0;
+  border: 0;
+}
+
+.CalculatorRow__unit-select .Select-control,
+.CalculatorRow__unit-select.is-focused:not(.is-open) .Select-control,
+.CalculatorRow__value-select .Select-control,
+.CalculatorRow__value-select.is-focused:not(.is-open) .Select-control {
+  box-shadow: none;
+}
+
+.CalculatorRow__unit-select .Select-control .Select-input:focus,
+.CalculatorRow__value-select .Select-control .Select-input:focus {
+  background: 0 0;
+}
+
+.CalculatorRow__unit-select .Select-arrow-zone,
+.CalculatorRow__value-select .Select-arrow-zone {
+  display: none;
+}
+
+.CalculatorRow__unit-select .Select-placeholder,
+.CalculatorRow__unit-select .Select-value,
+.CalculatorRow__unit-select :not(.Select--multi) > .Select-control .Select-value,
+.CalculatorRow__unit-select:not(.Select--multi) > .Select-control .Select-value,
+.CalculatorRow__value-select .Select-placeholder,
+.CalculatorRow__value-select .Select-value,
+.CalculatorRow__value-select :not(.Select--multi) > .Select-control .Select-value,
+.CalculatorRow__value-select:not(.Select--multi) > .Select-control .Select-value {
+  position: static;
+  display: -webkit-box;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: visible;
+}
+
+.CalculatorRow__unit-select .Select-value-label,
+.CalculatorRow__unit-select
+  .Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label,
+.CalculatorRow__unit-select
+  .Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label,
+.CalculatorRow__value-select .Select-value-label,
+.CalculatorRow__value-select
+  .Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label,
+.CalculatorRow__value-select
+  .Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label {
+  color: #007cb2 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.CalculatorRow__unit-select .Select-value-label:after,
+.CalculatorRow__value-select .Select-value-label:after {
+  content: ' ▾';
+}
+
+.CalculatorRow__unit-select .Select-value,
+.CalculatorRow__value-select .Select-value {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.CalculatorRow__unit-select .Select--single > .Select-control .Select-value,
+.CalculatorRow__unit-select .Select-placeholder,
+.CalculatorRow__value-select .Select--single > .Select-control .Select-value,
+.CalculatorRow__value-select .Select-placeholder {
+  color: #555;
+}
+
+.CalculatorRow__unit {
+  -webkit-transition: 0.4s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: 0.4s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.CalculatorRow__show-menu {
+  display: -webkit-box;
+  display: flex;
+  width: 30px;
+  height: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #989c9d;
+  background: #f0f0f0;
+}
+
+.embed-without-row-controls .CalculatorRow__show-menu {
+  display: none;
+}
+
+.CalculatorRow:first-child .CalculatorRow__show-menu {
+  border-top-right-radius: 4px;
+}
+
+.CalculatorRow:last-child .CalculatorRow__show-menu {
+  border-bottom-right-radius: 4px;
+}
+.CalculatorRow {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.CalculatorRow:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.CalculatorRow:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.CalculatorRow:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.embed .CalculatorRow:last-child {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.CalculatorRow--readOnly {
+  background: #f0f0f0;
+}
+
+.CalculatorRow--additionalInfoInline {
+  padding: 0 16px;
+  padding-bottom: 20px;
+  height: auto;
+  cursor: auto;
+}
+
+.CalculatorRow__input,
+.CalculatorRow__multi-input__part-input,
+.CalculatorRow__read-only-value {
+  width: 60px;
+  height: 48px;
+  -webkit-box-flex: 1;
+  flex: auto;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: right;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+}
+
+.CalculatorRow__input {
+  color: #444;
+}
+
+.CalculatorRow__read-only-value {
+  color: #888;
+}
+
+.CalculatorRow__input::-ms-clear {
+  width: 0;
+  height: 0;
+}

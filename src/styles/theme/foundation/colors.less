@@ -1,0 +1,78 @@
+// -------- Colors -----------
+@customer-color-h: 246; //hue
+@customer-color-s: 72%; //saturation
+@customer-color-l: 50%; //lightness
+@customer-color: hsl(@customer-color-h, @customer-color-s, @customer-color-l);
+@vendor-color-h: 16; //hue
+@vendor-color-s: 99%; //saturation
+@vendor-color-l: 43%; //lightness
+@vendor-color: hsl(@vendor-color-h, @vendor-color-s, @vendor-color-l);
+
+// Inspired from https://tailwindcss.com/docs/customizing-colors#default-color-palette
+// @app-primary-color: #1b4fe8;
+// Gray color
+@app-color-gray-100: #f7fafc;
+@app-color-gray-200: #edf2f7;
+@app-color-gray-300: #e2e8f0;
+@app-color-gray-400: #cbd5e0;
+@app-color-gray-500: #a0aec0;
+@app-color-gray-600: #718096;
+@app-color-gray-700: #4a5568;
+@app-color-gray-800: #2d3748;
+@app-color-gray-900: #1a202c;
+// Green color
+@app-color-green-100: #f0fff4;
+@app-color-green-200: #c6f6d5;
+@app-color-green-300: #9ae6b4;
+@app-color-green-400: #68d391;
+@app-color-green-500: #48bb78;
+@app-color-green-600: #38a169;
+@app-color-green-700: #2f855a;
+@app-color-green-800: #276749;
+@app-color-green-900: #22543d;
+// Red color
+@app-color-red-100: #fff5f5;
+@app-color-red-200: #fed7d7;
+@app-color-red-300: #feb2b2;
+@app-color-red-400: #fc8181;
+@app-color-red-500: #f56565;
+@app-color-red-600: #e53e3e;
+@app-color-red-700: #c53030;
+@app-color-red-800: #9b2c2c;
+@app-color-red-900: #742a2a;
+// Purple color
+@app-color-purple-100: #faf5ff;
+@app-color-purple-200: #e9d8fd;
+@app-color-purple-300: #d6bcfa;
+@app-color-purple-400: #b794f4;
+@app-color-purple-500: #9f7aea;
+@app-color-purple-600: #805ad5;
+@app-color-purple-700: #6b46c1;
+@app-color-purple-800: #553c9a;
+@app-color-purple-900: #44337a;
+// Blue color
+@app-color-blue-100: #ebf8ff;
+@app-color-blue-200: #bee3f8;
+@app-color-blue-300: #90cdf4;
+@app-color-blue-400: #63b3ed;
+@app-color-blue-500: #4299e1;
+@app-color-blue-600: #3182ce;
+@app-color-blue-700: #2b6cb0;
+@app-color-blue-800: #2c5282;
+@app-color-blue-900: #2a4365;
+// Teal color
+@app-color-teal-100: #e6fffa;
+@app-color-teal-200: #b2f5ea;
+@app-color-teal-300: #81e6d9;
+@app-color-teal-400: #4fd1c5;
+@app-color-teal-500: #38b2ac;
+@app-color-teal-600: #319795;
+@app-color-teal-700: #2c7a7b;
+@app-color-teal-800: #285e61;
+@app-color-teal-900: #234e52;
+
+// Theme colors for the application
+@app-primary-color: @app-color-blue-800;
+@app-color-primary: @app-primary-color;
+@app-color-primary-hover: darken(@app-color-primary, 10%);
+@app-color-secondary: lighten(@app-color-primary, 40%);
